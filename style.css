@@ -1,0 +1,253 @@
+/* CSS BY NAME */
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kavoon&display=swap');
+
+/* CSS REST */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--lavender);
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 20px;
+    font-family: 'Kavoon', serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Kavoon', serif;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.15em;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--yellow);
+    padding: 20px;
+}
+
+nav h2 {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav a {
+    background-color: var(--white);
+    display: block;
+    padding: 10px;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+/* Services */
+
+#services article {
+    background-color: var(--white);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#services {
+    background-color: var(--purple);
+    padding: 20px;
+    text-align: left;
+    
+}
+#services h3 {
+    color: var(--yellow);
+}
+
+#services h2 {
+    color: var(--white);
+}
+
+#why-us {
+    background-color: var(--pink);
+    padding: 20px;
+    color: var(--white);
+}
+
+#why-us h2 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.grid div {
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--dark-gray);
+}
+
+/* Individual box overrides for color */
+.grid div:nth-child(1) {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+.grid div:nth-child(2) {
+    background-color: var(--lavender);
+    color: var(--white);
+}
+
+.grid div:nth-child(3) {
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+}
+
+.grid div:nth-child(4) {
+    background-color: var(--white);
+    color: var(--dark-gray);
+}
+
+/* Pricing Section */
+#pricing {
+    background-color: var(--purple); /* Purple background */
+    padding: 20px;
+    color: var(--white);
+  }
+  
+  #pricing h2 {
+    color: var(--white);
+    font-family: 'Kavoon', serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  #pricing h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: var(--yellow);
+    text-align: left;
+  }
+  
+  /* Tables */
+  #pricing table {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Headers */
+  #pricing th {
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Table Data Cells */
+  #pricing td {
+    padding: 10px;
+    color: var(--dark-gray);
+    font-size: 1em;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Align cost column to right */
+  #pricing td:last-child {
+    text-align: right;
+  }
+  
+
+
+
+#contact {
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 20px;
+    border-top: 5px solid var(--purple);
+}
+
+
+/* CTA */
+#contact button {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    font-weight: bold;
+    font-size: 1em;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 3px 0 var(--dark-gray);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Hover state for button */
+  #contact button:hover {
+    background-color: var(--yellow);
+    box-shadow: none;
+  }
+
+/* Footer */
+footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 15px;
+    margin-top: 0px;
+}
