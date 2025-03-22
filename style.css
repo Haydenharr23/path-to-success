@@ -246,8 +246,11 @@ nav a {
 
 /* Footer */
 footer {
-    background-color: var(--dark-gray);
+    background-color: var(--purple);
     color: var(--white);
     padding: 15px;
     margin-top: 0px;
+}
+footer a {
+    color: var(--white);
 }
